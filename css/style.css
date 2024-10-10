@@ -1,0 +1,150 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #ff0000; /* Red color for links */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+a:hover {
+    color: #cc0000; /* Darker red on hover */
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.tagline {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* White text for contrast */
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+}
+
+/* Main content styles */
+.main-content {
+    padding: 20px;
+}
+
+/* Intro styles */
+.intro {
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White background for intro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.intro h2 {
+    color: #ff0000; /* Red color for headings */
+}
+
+.intro p, .intro ul {
+    color: #333; /* Dark text for readability */
+}
+
+.intro ul {
+    list-style-type: disc;
+    margin-left: 20px; /* Indent the list */
+}
+
+.promo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.promo-image {
+    width: 80%; /* Responsive promo image */
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333; /* Dark background for footer */
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.logo {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+}
+
+.footer-nav {
+    margin: 10px 0;
+}
+
+.footer-nav a {
+    color: white; /* White text in footer nav */
+    margin: 0 10px;
+}
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-media img {
+    width: 30px; /* Social media icon size */
+    height: auto;
+    margin: 0 5px;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Skip link styles */
+.skip {
+    position: absolute;
+    top: -40px; /* Hide off-screen */
+    left: 10px;
+    background-color: #ff0000; /* Red background for skip link */
+    color: white;
+    padding: 10px;
+    transition: top 0.3s;
+}
+
+.skip:focus {
+    top: 10px; /* Bring into view on focus */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .promo-image {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column; /* Stack links vertically on small screens */
+    }
+
+    .footer-nav a {
+        margin: 5px 0; /* Adjust margin for vertical layout */
+    }
+}

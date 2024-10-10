@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #ff0000;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #cc0000;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    position: relative;
+    color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+/* Intro styles */
+.introab {
+    background-color: rgb(253, 251, 251);
+    width: 100%;
+    padding: 30px 0;
+    padding-top: 1px;
+}
+
+
+.introab-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.introab h2 {
+    color: rgb(83, 78, 78);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.introab p {
+    color: rgb(83, 78, 78);
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+/* style for image in about us */
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mission-image {
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for section class in index */
+.supp {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.supp-image {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styles for products */
+.products {
+    margin-top: 20px;
+    background-color: #e0e0e0;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.product h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Styles for Call to Action Button*/
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #CC0000;
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #ff0000;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.footer-nav {
+    margin: 10px 0;
+    position: relative;
+}
+
+.footer-nav a {
+    color: white;
+    margin: 0 10px;
+    position: relative;
+}
+
+.footer-nav a[href="store.html"]::after {
+    content: "Be Fit! Buy Now!";
+    color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s, top 0.3s;
+}
+
+.footer-nav a[href="store.html"]:hover::after {
+    opacity: 1;
+    top: 120%;
+}
+
+
+
+/* Styles for social media */
+.social-media {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/* Styles for social media icon */
+.facebook-icon {
+    width: 52px;
+    height: auto;
+}
+
+.instagram-icon {
+    width: 25px;
+    height: auto;
+}
+
+.instagram-link {
+    position: relative;
+    margin: 0 10px;
+}
+
+.instagram-message {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff0000;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.instagram-link:hover .instagram-message {
+    display: block;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+/* *************************************************************************** */
+
+
+/* Styles for skip links */
+.skip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #ff0000;
+    color: white;
+    padding: 8px;
+    transition: top 0.3s;
+}
+
+.skip:focus {
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .promo-image {
+        width: 100%;
+    }
+
+    .facebook-icon {
+        width: 52px;
+        height: auto;
+    }
+    .instagram-icon {
+        width: 25px;
+        height: auto;
+    }
+
+    .intro {
+        padding: 15px;
+        
+    }
+
+    .intro1 {
+        max-width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-row {
+        flex-direction: column;
+    }
+
+    .product {
+        margin: 5px 0;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .product-row {
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    .product {
+        flex: 0 0 48%;
+        margin: 1%;
+        max-width: 100%;
+    }
+
+    .gallery img {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Style for Contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style for Intro Section */
+
+.intro {
+    text-align: left;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    width: 100%;
+    color: white;
+}
+
+.intro1 {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+}
+
+/* *************************************************************************** */
+
+.objectives, .about-history, .call-to-action {
+    text-align: center; /* Center align text */
+    background-color: rgb(99, 92, 92); /* Gray background */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 8px; /* Optional: rounded corners */
+    color: #FFFFFF; /* White text color for better contrast */
+    margin: 20px auto; /* Center sections with auto margins */
+    max-width: 800px; /* Optional: set a max width for the sections */
+}
+
+.objectives ul {
+    list-style-type: disc; /* Set bullet style to disc */
+    padding-left: 20px; /* Add padding to the left of the list */
+    text-align: left; /* Align text to the left for better readability */
+    margin: 0 auto; /* Center the list itself */
+}
+
+.objectives li {
+    margin: 5px 0; /* Add some margin between list items */
+}
+
+
+
+/* *************************************************************************** */
+
+
+.program-nutrition {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Style for each program */
+.program-nutrition h3 {
+    color: #333;
+    margin-top: 30px;
+    font-size: 1.8em;
+}
+
+/* Style for paragraphs and lists */
+.program-nutrition p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Style for unordered lists */
+.program-nutrition ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.program-nutrition ul li {
+    margin-bottom: 8px;
+}
+
+/* Style for exercise recommendations section */
+.program-nutrition h4 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Style for the images of program-nutrition */
+.program-nutrition img {
+    width: 680px;
+    height: 320px;
+    object-fit: cover;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 2px solid rgb(223, 208, 208);
+    border-radius: 10px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-nutrition img:hover {
+    border-color: rgb(223, 208, 208);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+    .program-nutrition {
+        padding: 15px;
+    }
+
+    .program-nutrition h3 {
+        font-size: 1.5em;
+    }
+
+    .program-nutrition p {
+        font-size: 0.9rem;
+    }
+
+    .program-nutrition img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1, h2, h3, h4 {
+        font-size: smaller;
+    }
+    .program-nutrition img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
